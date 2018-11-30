@@ -1,165 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+    />
 
-    <title>Fix & Flatter</title>
-</head>
-<body>
-<noscript>
-    <strong>We're sorry but playground doesn't work properly without JavaScript enabled. Please enable it to
-        continue.</strong>
-</noscript>
+    <title>Revel Electric</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but playground doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
 
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <header class="sticky pin-t">
+      <div class="flex w-full justify-end topbar">
+        <ul class="flex list-reset items-end mr-4">
+          <li class="mr-2 font-light text-sm">
+            <i class="far fa-envelope text-white"></i>
+          </li>
+          <li class="text-white mr-4 font-light tracking-loose text-sm">
+            info@revelelectric.com
+          </li>
+          <li class="mr-2 font-light text-sm">
+            <i class="fas fa-map-marker-alt text-white"></i>
+          </li>
+          <li class="text-white mr-4 font-light tracking-loose text-sm">
+            Squamish, BC
+          </li>
+          <li class="mr-2 font-light text-sm">
+            <i class="fas fa-phone text-white"></i>
+          </li>
+          <li class="text-white mr-2 font-light tracking-loose text-sm">
+            604-123-4567
+          </li>
+        </ul>
+      </div>
+      <div class="bg-white w-full mx-auto md:flex p-3">
+        <div class="w-1/2 ml-12">
+          <ul class="md:flex list-reset">
+            <li><i class="fas fa-bolt text-5xl text-red-darker italic"></i></li>
+            <li><h1 class="header mt-3 ml-1 p-2">Revel Electric</h1></li>
+          </ul>
+        </div>
+        <div class="w-1/2 mr-12">
+          <ul class="md:flex list-reset justify-end">
+            <li class="menu mt-3 mr-1 p-2"><a href="#">Services</a></li>
+            <li class="menu mt-3 mr-1 p-2"><a href="#">About</a></li>
+            <li class="menu mt-3 p-2"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-<header>
-    <div class="flex items-center heroimg h-screen bg-cover sm:w-full">
-        <div class="container mx-auto sm:px-0 max-w-sm sticky pin-t">
-            <div class="mx-auto text-center header">
-                Fix
-                <span class="text-purple-brand">&</span>
-                Flatter
-            </div>
-            <div class="mt-4 sm:flex sm:justify-center mx-auto items-center">
-                <a class="sm:mt-0 mx-auto sm:mx-2 max-w-xs rounded-full text-center text-sm font-light btntext tracking-wide block px-8 py-2 border border-purple-brand bg-purple-brand text-white hover:border-purple-brand hover:bg-purple-brand-light hover:text-white"
-                   href="#form_anchor">Get a Quote</a>
-                <a class="sm:mt-0 mt-4 mx-auto sm:mx-2 max-w-xs rounded-full text-center text-sm font-light btntext tracking-wide block px-8 py-2 border border-purple-brand bg-white-brand text-purple-brand hover:border-purple-brand hover:bg-purple-brand hover:text-white"
-                   href="#learn_more_anchor">Learn More</a>
-            </div>
+    <div class="flex items-center mx-auto heroimg h-screen bg-cover sm:w-full">
+      <div class="container mx-auto items-center text-center sm:px-0">
+        <div class="mb-2">
+          <h1 class="text-5xl text-white">
+            Commercial & Residential Electrical Systems
+          </h1>
+          <div class="text-3xl text-white mb-4">
+            New construction & retrofits
+          </div>
         </div>
-</header>
-<!--END OF HERO-->
-<div class="container mx-auto">
-    <div class="mb-4">
-        <div class="border-solid border-b-2 subhead pt-8 pb-2 mb-5" id="learn_more_anchor">Decorating, style, and
-            remodelling to suit your life
-            and your budget
+        <div class="py-4 px-2 sm:flex sm:justify-center mx-auto items-center">
+          <a
+            class="sm:mt-0 mx-auto sm:mx-2 max-w-xs button-quote btntext-quote"
+            href="#"
+            >Get a Quote<i class="fas fa-chevron-right ml-5"></i
+          ></a>
+          <a
+            class="sm:mt-0 mx-auto sm:mx-2 max-w-xs button-services btntext-services"
+            href="#"
+            >Our Services<i class="fas fa-chevron-right ml-5"></i
+          ></a>
         </div>
-        <div class="leading-normal text-justify bodytext">
-            <div class="mb-16">Fix and Flatter is a husband-and-wife team who can tackle virtually any room in your
-                house to bring your ideas to life. Whether you need
-                a new coat of paint, striking wallpaper, or simple touches to freshen up the look of your space, we
-                guide you through the process and do all the heavy lifting so you don't have to. Need your bathroom
-                vanity, toilet, or tub replaced? Want new flooring throughout your home? Would you like a closet added
-                to a room? Do you want a whole new outdoor space, including a deck and furniture? Does your kitchen need
-                a face lift? Combined we have over 30 years' experience with remodelling, redecorating, and
-                renovating all types of spaces. Check out our process below to see how we help you find the
-                best solutions that fit
-                your needs and budget. No room is too small, no layout too awkward, and no outdated tile too tough for
-                us to handle.<br><br>
-                Give us a call for a free estimate!<br><br>
-                Areas we serve include Blenheim, Chatham, Delaware, Dresden, Grand Bend, Komoka, Lambton
-                Shores, London, Mount Brydges, Petrolia, Ridgetown, Sarnia, St.Thomas, Strathroy,
-                Thamesville, Wallaceburg, and
-                anything in between.<br><br>
-                Check out our <a href="gallery.html" class="text-purple-brand-bright font-bold">photo gallery!</a>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!--SECOND MIDDLE-->
+    <div class="flex p-6 mt-12 items-center">
+      <div class="w-1/2">
+        <img src="/images/main1.jpeg" alt="new construction" class="h-112" />
+      </div>
+      <div class="w-1/2 p-12 bodytext text-xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, fugit?
+        Neque ex suscipit quia, quis nobis ipsa doloribus aspernatur cumque
+        incidunt dicta perspiciatis, quas fugiat.
+      </div>
+    </div>
 
-    <div class="mb-16">
-        <div class="flex leading-normal">
-            <div class="w-1/4 mx-4 text-center">
-                <div><i class="fas fa-cogs text-3xl text-purple-brand-bright mb-4"></i></div>
-                <div class="bodytext">Brainstorm and
-                    game plan: tell us your ideas and vision, share your
-                    sketches and photos
-                </div>
-            </div>
+    <div class="flex p-6 items-center mb-12">
+      <div class="w-1/2 p-12 bodytext text-xl text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, fugit?
+        Neque ex suscipit quia, quis nobis ipsa doloribus aspernatur cumque
+        incidunt dicta perspiciatis, quas fugiat.
+      </div>
+      <div class="w-1/2">
+        <img src="/images/main2.jpg" alt="commercial lighting" class="h-112" />
+      </div>
+    </div>
 
-            <div class="w-1/4 mx-4 text-center">
-                <div><i class="far fa-handshake text-3xl text-purple-brand-bright mb-4"></i></div>
-                <div class="bodytext">Consensus:
-                    nothing happens until you, the homeowner, are happy with the design plan, the budget, and the
-                    timeline
-                </div>
-            </div>
+    <div class="text-blue-darker text-center mb-12">
+      <h1>Learn More About Revel Electric</h1>
+    </div>
+    <div class="flex items-center mx-auto text-center mb-12">
+      <ul class="list-reset leading-loose pl-32 pr-8">
+        <li><i class="fas fa-user-tie text-3xl text-red-darker mb-4"></i></li>
+        <li><h4 class="text-blue-darker">The Company</h4></li>
+        <li class="bodytext text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quis aliquid laudantium repudiandae nesciunt consequuntur.
+        </li>
+      </ul>
+      <ul class="list-reset leading-loose pl-8 pr-32">
+        <li><i class="fas fa-pen-fancy text-3xl text-red-darker mb-4"></i></li>
+        <li><h4 class="text-blue-darker">Our Mission</h4></li>
+        <li class="bodytext text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quis aliquid laudantium repudiandae nesciunt consequuntur.
+        </li>
+      </ul>
+    </div>
 
-            <div class="w-1/4 mx-4 text-center">
-                <div><i class="fas fa-hammer text-3xl text-purple-brand-bright mb-4"></i></div>
-                <div class="bodytext">Work:
-                    within the agreed timeline, we complete the work necessary to bring your vision to life
-                </div>
-            </div>
+    <div class="flex items-center mx-auto text-center mb-16">
+      <ul class="list-reset leading-loose pl-32 pr-8">
+        <li>
+          <i class="fas fa-check-double text-3xl text-red-darker mb-4"></i>
+        </li>
+        <li><h4 class="text-blue-darker">Our Guarantee</h4></li>
+        <li class="bodytext text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quis aliquid laudantium repudiandae nesciunt consequuntur.
+        </li>
+      </ul>
+      <ul class="list-reset leading-loose pl-8 pr-32">
+        <li><i class="fas fa-users text-3xl text-red-darker mb-4"></i></li>
+        <li><h4 class="text-blue-darker">Our Clients</h4></li>
+        <li class="bodytext text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quis aliquid laudantium repudiandae nesciunt consequuntur.
+        </li>
+      </ul>
+    </div>
 
-            <div class="w-1/4 mx-4 text-center">
-                <div><i class="fas fa-couch text-3xl text-purple-brand-bright mb-4"></i></div>
-                <div class="bodytext">Sit back, relax,
-                    and enjoy your new and improved space
-                </div>
-            </div>
-
+    <footer class="footer">
+      <div class="flex mx-auto">
+        <div class="w-1/3 items-center text-center">
+          <!-- <h4 class="text-white font-semibold">Contact Us</h4> -->
+          <ul class="list-reset bodytext text-sm text-white">
+            <li>123 Main Street</li>
+            <li>Squamish, BC</li>
+            <li>V01 10N</li>
+          </ul>
         </div>
-    </div>
-
-    <!--FORM-->
-    <div class="border-solid border-b-2 subhead pt-8 pb-2 mb-5">Request a quote or get in touch
-    </div>
-    <div class="container mx-auto bodytext p-6 mb-4" id="form_anchor">
-        <form action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email...">
-
-            <label for="city">City</label>
-            <select id="city" name="city">
-                <option value="select">Select</option>
-                <option value="blenheim">Blenheim</option>
-                <option value="chatham">Chatham</option>
-                <option value="delaware">Delaware</option>
-                <option value="dresden">Dresden</option>
-                <option value="grand bend">Grand Bend</option>
-                <option value="komoka">Komoka</option>
-                <option value="lambton shores">Lambton Shores</option>
-                <option value="london">London</option>
-                <option value="mount brydges">Mount Brydges</option>
-                <option value="petrolia">Petrolia</option>
-                <option value="ridgetown">Ridgetown</option>
-                <option value="sarnia">Sarnia</option>
-                <option value="wallaceburg">Wallaceburg</option>
-                <option value="st. thomas">St. Thomas</option>
-                <option value="strathroy">Strathroy</option>
-                <option value="thamesville">Thamesville</option>
-                <option value="--not listed--">--Not listed--</option>
-            </select>
-
-            <label for="service">Type of Service Requested</label>
-            <select id="service" name="service">
-                <option value="select">Select</option>
-                <option value="decorate">Decorate</option>
-                <option value="remodel">Remodel</option>
-                <option value="renovate">Renovate</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
-    </div>
-
-    <!--END OF FORM-->
-
-</div>
-
-<div id="app"></div>
-<!-- built files will be auto injected -->
-</body>
+        <div class="w-1/3 items-center text-center">
+          <ul class="list-reset bodytext text-sm text-white">
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div class="w-1/3 items-center text-center">
+          <ul class="list-reset bodytext text-sm text-white">
+            <li>604-123-4567</li>
+            <li>info@revelelectric.ca</li>
+            <li>Interested in a career with Revel? Get in touch!</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

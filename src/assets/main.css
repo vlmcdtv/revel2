@@ -1,74 +1,70 @@
 @tailwind preflight;
 
-.heroimg {
-    background-image: linear-gradient(to right, rgb(64, 64, 64, .4), rgb(64, 64, 64, .4)), url(bg-image.jpg);
-    background-attachment: fixed;
-    background-position: 50%;
+.topbar {
+  @apply .p-3;
+  background: #333333;
+}
+
+.footer {
+  @apply .p-3;
+  background: #333333;
 }
 
 .header {
-    font-family: 'Cinzel Decorative';
-    @apply font-bold
-    text-7xl;
-    text-shadow: 1px 1px #e6e6e6;
+  @apply .text-xl .font-bold .italic;
+  text-transform: uppercase;
 }
 
-.navbar {
-    font-family: 'Cinzel Decorative';
-    @apply font-semibold
-    text-lg text-yellow-brand;
+.menu {
+  @apply .font-bold .text-lg .mb-1;
 }
-
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  @apply .text-red-darker;
+}
+
+a:hover {
+  @apply .text-grey;
 }
 
 .bodytext {
-    font-family: mr-eaves-modern, sans-serif;
-    font-style: normal;
-    font-weight: 100;
+  @apply .font-light .text-grey-darker .leading-normal .tracking-normal;
 }
 
-.btntext {
-    font-family: mr-eaves-modern, sans-serif;
-    font-style: normal;
-    font-weight: 100;
+.heroimg {
+  background-image: linear-gradient(
+      to right,
+      rgb(64, 64, 64, 0.8),
+      rgb(64, 64, 64, 0.8)
+    ),
+    url(bg2.jpg);
+  background-attachment: fixed;
+  background-position: 50%;
 }
 
-.subhead {
-    @apply font-bold text-purple-brand-bright tracking-normal;
-    text-transform: uppercase;
+.btntext-quote {
+  @apply .tracking-wide .text-center .font-light .text-white .text-xl;
 }
 
-/*form*/
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+.btntext-services {
+  @apply .tracking-wide .text-center .font-light .text-white text-xl;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #5A425C;
-    color: #fff;
-    font-style: normal;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+.button-quote {
+  @apply .rounded-full .px-16 .py-2 .border-transparent .bg-red-darkest .opacity-75;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #745676;
+.button-services {
+  @apply .rounded-full .px-16 .py-2 .border .border-white .opacity-75;
+}
+
+.button-quote:hover {
+  @apply .border-black .bg-white .text-black .font-normal;
+}
+
+.button-services:hover {
+  @apply .border-transparent .bg-red-darkest .text-white .font-normal;
 }
 
 @tailwind components;
